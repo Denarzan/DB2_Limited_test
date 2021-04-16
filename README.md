@@ -31,9 +31,12 @@ e.g.
 
 
 ### Start API
+cd chat_room
 
-docker-compose build
+sudo docker-compose build
 
-docker-compose run web python chat_room/manage.py migrate
+sudo docker-compose run web python manage.py makemigrations
 
-docker-compose up
+sudo docker-compose run web python manage.py migrate
+
+sudo docker-compose up
